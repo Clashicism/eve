@@ -23,7 +23,7 @@ client.on('message', msg => {                                       console.log(
   let message=msg.content.toLowerCase();
   let words=message.split(" ");
   let [input,x]=[words[0],words[1]];
-console.log('user entered '+[words[0]);
+console.log('user entered '+[words[0].toString());
 
   if (input === 'roll') {                                       console.log(`on a roll`);
     let dieRoll=0; let amount=0; let diceText=""; 
