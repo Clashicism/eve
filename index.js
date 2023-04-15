@@ -18,7 +18,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
   });
 
-client.on('message', msg => {
+client.on('message', msg => {  console.log(`on message`);
   let crit=0; let stun=0; let high=0; let glitch=0; let reply="";
   let message=msg.content.toLowerCase();
   let words=message.split(" ");
