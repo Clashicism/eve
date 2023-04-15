@@ -82,7 +82,8 @@ client.on('message', msg => {
   else if (input === 'user') { 
     reply="Collecting data \n";
     reply+="msg.author.id "+msg.author.id+"\n";
-   msg.reply(reply); 
+    console.log(reply);
+    msg.reply(reply); 
 // webhookClient.send(reply);
   }
 
