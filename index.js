@@ -23,6 +23,8 @@ client.on('message', msg => {                                       console.log(
   let message=msg.content.toLowerCase();
   let words=message.split(" ");
   let [input,x]=[words[0],words[1]];
+console.log('user entered '+[words[0]);
+
   if (input === 'roll') {                                       console.log(`on a roll`);
     let dieRoll=0; let amount=0; let diceText=""; 
     if(x>0) {
@@ -49,8 +51,8 @@ client.on('message', msg => {                                       console.log(
       else { reply+=", epic fail"; } 
       x=0; input=""; msg.reply(reply); }
     else { reply="I want to play!!!"; x=0; input=""; msg.reply(reply); } }
-  if (input === 'soft') {                                console.log(`gone soft`);
 
+  if (input === 'soft') {                                console.log(`gone soft`);
     let dieRoll=0; let amount=0; let diceText="";
     if(x>0) {                                            console.log(`got dice?`);
       for(i=0; i<x; i++) { 
