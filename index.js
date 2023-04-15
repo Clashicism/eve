@@ -9,7 +9,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 // new code
-const webhookClient = new Discord.WebhookClient('1096829707212816414', 'ckKimGbhbm3dqjDsatw-K79ABctbCFKNAPF_r6o4fnau8rdNfKBNonvU-Q4HhTBwmhiv');
+// const webhookClient = new Discord.WebhookClient('1096829707212816414', 'ckKimGbhbm3dqjDsatw-K79ABctbCFKNAPF_r6o4fnau8rdNfKBNonvU-Q4HhTBwmhiv');
 // end chatGPT generated new code part 1
 
 console.log("start");
@@ -82,8 +82,8 @@ client.on('message', msg => {
   else if (input === 'user') { 
     reply="Collecting data \n";
     reply+="msg.author.id "+msg.author.id+"\n";
-//    msg.reply(reply); 
-webhookClient.send(reply);
+   msg.reply(reply); 
+// webhookClient.send(reply);
   }
 
 });
